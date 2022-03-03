@@ -8,7 +8,7 @@ Project for developing and exporting templates into proprietary software.
 - [ ] Label, DinA7
 - [ ] Label, DinA7/2
 - [ ] Label, DinA7 1cm
-- [ ] Letter DinA5 with personal touch
+- [x] Letter DinA5 with personal touch
 - [ ] Letter DinA4
 - [ ] Envelope DinC6
 - [ ] Envelope DinC6 with personal touch

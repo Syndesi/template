@@ -1,0 +1,28 @@
+$letter-a5-private-margin-x: 12mm;
+$letter-a5-private-margin-y: 12mm;
+
+
+section.letter.letter-a5-private {
+  font-family: "Journal", serif;
+  font-size: 9mm;
+  line-height: 1.2em;
+  page: letter-a5-private;
+  width: 148mm;
+}
+
+@page letter-a5-private {
+  width: 148mm;
+  height: 210mm;
+  padding: $letter-a5-private-margin-y $letter-a5-private-margin-x;
+}
+
+@media screen {
+  section.letter.letter-a5-private {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: $letter-a5-private-margin-y $letter-a5-private-margin-x;
+    outline: 1px solid #000;
+  }
+}
