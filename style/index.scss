@@ -1,0 +1,22 @@
+// global imports from libraries
+@use "../node_modules/modern-css-reset/src/reset.css";
+
+// global imports from local files
+@use "typography";
+
+
+// template specific styles
+@use "./template/label";
+
+
+
+:root {
+  --color-code: #000;
+  --color-text: #000;
+  --color-logo: #000;
+}
+
+
+body {
+  background: #fff;
+}

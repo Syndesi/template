@@ -1,0 +1,83 @@
+$page-label-folder-8cm-width: 187mm;
+$page-label-folder-8cm-height: 53mm;
+$page-label-folder-8cm-margin-out: 7mm;
+$page-label-folder-8cm-margin-in: 7mm;
+
+
+section.label {
+  display: block;
+  position: relative;
+  page: label-folder-8cm;
+  font-family: "Qanelas Soft", sans-serif;
+  width: $page-label-folder-8cm-width;
+  height: $page-label-folder-8cm-height;
+
+  > .flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    > * {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    > .code {
+      width: 20mm;
+      height: 20mm;
+      margin-left: $page-label-folder-8cm-margin-out;
+      margin-right: $page-label-folder-8cm-margin-in;
+      > img, > svg {
+        width: 20mm;
+        height: 20mm;
+        object-fit: cover;
+        overflow: hidden;
+        transform: rotate(90deg);
+        fill: var(--color-code);
+      }
+    }
+    > .text {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    > .logo {
+      width: 20mm;
+      height: 20mm;
+      margin-left: $page-label-folder-8cm-margin-in;
+      margin-right: $page-label-folder-8cm-margin-out;
+      > img, > svg {
+        width: 20mm;
+        height: 20mm;
+        object-fit: cover;
+        overflow: hidden;
+        transform: rotate(90deg);
+        fill: var(--color-logo);
+      }
+    }
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 12mm;
+  }
+  p {
+    font-size: 6mm;
+  }
+}
+
+@media screen {
+  section.label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 1px solid #000;
+  }
+}
+
+@page label-folder-8cm {
+  width: $page-label-folder-8cm-width;
+  height: $page-label-folder-8cm-height;
+  margin: 0;
+}
