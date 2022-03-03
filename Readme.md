@@ -2,8 +2,8 @@ Project for developing and exporting templates into proprietary software.
 
 ### Templates:
 
+- [x] Label for folder, 5cm
 - [x] Label for folder, 8cm
-- [ ] Label for folder, 5cm
 - [ ] Label, DinA6
 - [ ] Label, DinA7
 - [ ] Label, DinA7/2

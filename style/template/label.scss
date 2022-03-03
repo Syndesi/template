@@ -1,3 +1,7 @@
+$page-label-folder-5cm-width: 187mm;
+$page-label-folder-5cm-height: 30mm;
+$page-label-folder-5cm-margin-out: 7mm;
+$page-label-folder-5cm-margin-in: 7mm;
 $page-label-folder-8cm-width: 187mm;
 $page-label-folder-8cm-height: 53mm;
 $page-label-folder-8cm-margin-out: 7mm;
@@ -7,11 +11,7 @@ $page-label-folder-8cm-margin-in: 7mm;
 section.label {
   display: block;
   position: relative;
-  page: label-folder-8cm;
   font-family: "Qanelas Soft", sans-serif;
-  width: $page-label-folder-8cm-width;
-  height: $page-label-folder-8cm-height;
-
   > .flex {
     display: flex;
     flex-wrap: nowrap;
@@ -26,8 +26,6 @@ section.label {
     > .code {
       width: 20mm;
       height: 20mm;
-      margin-left: $page-label-folder-8cm-margin-out;
-      margin-right: $page-label-folder-8cm-margin-in;
       > img, > svg {
         width: 20mm;
         height: 20mm;
@@ -45,8 +43,6 @@ section.label {
     > .logo {
       width: 20mm;
       height: 20mm;
-      margin-left: $page-label-folder-8cm-margin-in;
-      margin-right: $page-label-folder-8cm-margin-out;
       > img, > svg {
         width: 20mm;
         height: 20mm;
@@ -76,8 +72,46 @@ section.label {
   }
 }
 
+@page label-folder-5cm {
+  width: $page-label-folder-5cm-width;
+  height: $page-label-folder-5cm-height;
+  margin: 0;
+}
+
+section.label.label-folder-5cm {
+  page: label-folder-5cm;
+  width: $page-label-folder-5cm-width;
+  height: $page-label-folder-5cm-height;
+  > .flex {
+    > .code {
+      margin-left: $page-label-folder-5cm-margin-out;
+      margin-right: $page-label-folder-5cm-margin-in;
+    }
+    > .logo {
+      margin-left: $page-label-folder-5cm-margin-in;
+      margin-right: $page-label-folder-5cm-margin-out;
+    }
+  }
+}
+
 @page label-folder-8cm {
   width: $page-label-folder-8cm-width;
   height: $page-label-folder-8cm-height;
   margin: 0;
+}
+
+section.label.label-folder-8cm {
+  page: label-folder-8cm;
+  width: $page-label-folder-8cm-width;
+  height: $page-label-folder-8cm-height;
+  > .flex {
+    > .code {
+      margin-left: $page-label-folder-8cm-margin-out;
+      margin-right: $page-label-folder-8cm-margin-in;
+    }
+    > .logo {
+      margin-left: $page-label-folder-8cm-margin-in;
+      margin-right: $page-label-folder-8cm-margin-out;
+    }
+  }
 }

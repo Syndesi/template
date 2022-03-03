@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        :root {
+            {{#color.code}}
+            --color-code: {{{color.code}}};
+             {{/color.code}}
+            {{#color.text}}
+            --color-text: {{{color.text}}};
+             {{/color.text}}
+            {{#color.logo}}
+            --color-logo: {{{color.logo}}};
+             {{/color.logo}}
+        }
+    </style>
+</head>
+<body>
+<section class="label label-folder-5cm">
+    <div class="flex">
+        <div class="code">
+            {{{code}}}
+        </div>
+        <div class="text">
+            <h1>{{title}}</h1>
+            <p>{{subtitle}}</p>
+        </div>
+        <div class="logo">
+            {{{logo}}}
+        </div>
+    </div>
+</section>
+</body>
+</html>
